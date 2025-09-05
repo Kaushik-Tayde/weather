@@ -1,18 +1,10 @@
-# ==============================
-# Weather Data Analysis Project
-# ==============================
 
-# Import Libraries
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# ------------------------------
-# 1. Load Dataset
-# ------------------------------
-# Example dataset: weather.csv
-# Columns -> Date, Temperature, Humidity, WindSpeed, Rainfall
 df = pd.read_csv("weather.csv")
 
 print("First 5 records:")
@@ -106,3 +98,4 @@ plt.show()
 # ------------------------------
 df.to_csv("weather_analysis_output.csv", index=False)
 print("\nAnalysis complete! Results saved to 'weather_analysis_output.csv'")
+
